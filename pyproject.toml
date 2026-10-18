@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "kinase-agentic-ai"
+version = "0.1.0"
+description = "Provenance-aware dovitinib kinase evidence acquisition"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31"]
+[project.scripts]
+kinase-acquire = "kinase_agents.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
